@@ -1,0 +1,77 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f3f4f6;
+}
+
+.calculator {
+  width: 300px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.calculator h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.display {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: right;
+  color: #4caf50;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.operator {
+  background-color: #b92897;
+}
+
+button.clear {
+  background-color: #6d3ce7;
+  grid-column: span 2;
+}
+
+button.equals {
+  background-color: #994747;
+  grid-column: span 2;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+button:not(.operator):not(.clear):not(.equals) {
+  background-color: #555;
+}
